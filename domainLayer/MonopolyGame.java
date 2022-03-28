@@ -5,6 +5,9 @@ public class MonopolyGame {
     private Die[] dice;
     private Player[] players;
     private int turnNumber;
+    private int locate;
+    private int board;
+
 
 
 
@@ -14,9 +17,12 @@ public class MonopolyGame {
         for (int i= 0 ;i < playerNames.length;i++){
             this.players[i] = new Player(playerNames[i]);
         }
+
         this.dice = new Die[2];
         this.dice[0] = new Die();
         this.dice[1] = new Die();
+
+        this.board = new board();
 
         this.turnNumber = 0;
     }
@@ -26,7 +32,7 @@ public class MonopolyGame {
 
         return diceValue;
     }
-    public String getCurrentPlayerName(){
+    public String getCurrentPlayerData(){
         Player currentPlayer = this.players[turnNumber];
         return currentPlayer.getName();
     }
