@@ -11,7 +11,7 @@ public class Main {
         MonopolyGame monopolyGame = new MonopolyGame(players);
         int diceValue = monopolyGame.PlayTurn();
 
-        System.out.println(monopolyGame.getCurrentPlayerName());
+        System.out.println(monopolyGame.getCurrentPlayerData());
         System.out.println(diceValue);
 
     }
