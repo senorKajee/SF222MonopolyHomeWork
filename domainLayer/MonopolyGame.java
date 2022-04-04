@@ -9,8 +9,6 @@ public class MonopolyGame {
     private int board;
 
 
-
-
     public MonopolyGame(String[] playerNames){
         this.players = new Player[playerNames.length];
 
