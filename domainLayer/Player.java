@@ -21,6 +21,11 @@ public class Player {
         int value = d1.getFaceValue() + d2.getFaceValue();
         return value;
     }
+    
+    public int upDateLocation(diceValue){
+      this.location = location + diceValue;
+    }
+
     public int getLocationValue(board b1){
       b1.getLocationValue();
       return location;

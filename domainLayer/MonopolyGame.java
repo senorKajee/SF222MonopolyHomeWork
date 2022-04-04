@@ -29,12 +29,14 @@ public class MonopolyGame {
     public int PlayTurn(){
         Player currentPlayer = this.players[turnNumber];
         int diceValue = currentPlayer.rollDice(this.dice[0],this.dice[1]);
-
+        int newLocation = currentPlayer.upDateLocation(diceValue);
         return diceValue;
     }
     public String getCurrentPlayerData(){
         Player currentPlayer = this.players[turnNumber];
         return currentPlayer.getName();
     }
+
+
 
 }
