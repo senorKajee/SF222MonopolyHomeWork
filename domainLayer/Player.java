@@ -30,5 +30,14 @@ public class Player {
     public int checkRound(){
       return round;
     }
+    publice int buyEstate(board b1){
+      int estatePrice = b1.getLocationPrice
+      if (this.money >estatePrice){
+        this.money = this.money - estatePrice
+        System.out.println("Purchase successfully")
+      }else{
+        System.out.println("Can not Purchase")
+      }
+    }
 
 }
