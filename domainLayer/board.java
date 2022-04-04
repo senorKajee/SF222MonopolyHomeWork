@@ -7,8 +7,8 @@ public class Board{
   public Board(){
 
   }
-  
-  public int moveToLocation(diceValue){
+
+  public int moveToLocation(int diceValue){
     this.locationValue = locationValue + diceValue;
     return this.locationValue;
   }
